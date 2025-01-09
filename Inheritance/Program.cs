@@ -34,6 +34,36 @@ namespace Inheritance
              *  
              * Creatively display the class member values 
              */
+            
+            var birdOne = new Bird();
+            birdOne.Name = "Hawk";
+            birdOne.Age = 2;
+            birdOne.Diet = "Carnivore";
+            birdOne.IsNocturnal = "false";
+            birdOne.BeakType = "hooked";
+            birdOne.CanFly = true;
+            birdOne.FeatherColor = "brown";
+            birdOne.Wingspan = 8;
+            
+            Console.WriteLine($"Name: {birdOne.Name}\n,Age: {birdOne.Age}\nDiet: {birdOne.Diet}\nNocturnal: {birdOne.IsNocturnal}\nBeak: {birdOne.BeakType}\nFlight: {birdOne.CanFly}\nFeather: {birdOne.FeatherColor}\nWingspan: {birdOne.Wingspan}");
+            Console.WriteLine();
+            
+            var reptileOne = new Reptile()
+            {
+                Name = "Python",
+                Age = 1,
+                Diet = "small rodents",
+                IsNocturnal = "true",
+                ForkTongue = true,
+                HasShell = false,
+                IsVenomous = true,
+                ScaleColor = "yellow",
+            }
+            ;
+            
+            Console.WriteLine($"Name: {reptileOne.Name}\nAge: {reptileOne.Age}\nDiet: {reptileOne.Diet}\nNocturnal: {reptileOne.IsNocturnal}\nShell: {reptileOne.HasShell}\nVenomous: {reptileOne.IsVenomous}\nScaleColor: {reptileOne.ScaleColor}" );
+            Console.WriteLine();
+
         }
     }
 }
